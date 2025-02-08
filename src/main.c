@@ -6,7 +6,7 @@
 /*   By: anuketay <anuketay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 18:42:50 by anuketay          #+#    #+#             */
-/*   Updated: 2025/02/08 19:05:57 by anuketay         ###   ########.fr       */
+/*   Updated: 2025/02/08 19:27:28 by anuketay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,10 @@ void	*routine(void *arg)
 		if (info->is_dead)
 			break ;
 		print_state(philo, "is thinking");
+		if (info->num_phi % 2 == 0)
+		{
+			usleep(info->eat_time * 1000);
+		}
 	}
 	return (NULL);
 }
