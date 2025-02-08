@@ -6,7 +6,7 @@
 /*   By: anuketay <anuketay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 18:42:59 by anuketay          #+#    #+#             */
-/*   Updated: 2025/02/08 19:00:57 by anuketay         ###   ########.fr       */
+/*   Updated: 2025/02/08 19:06:34 by anuketay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	validate_arguments(int argc, char *argv[])
 		while (argv[arg_index][char_index])
 		{
 			if (!(argv[arg_index][char_index] >= '0'
-					&& argv[arg_index][char_index] <= '9'))
+				&& argv[arg_index][char_index] <= '9'))
 				print_error_and_exit("Invalid argument");
 			char_index++;
 		}
