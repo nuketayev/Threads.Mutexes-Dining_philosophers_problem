@@ -43,7 +43,6 @@ void	*routine(void *arg)
         if (info->is_dead)
             break;
         print_state(philo, "is thinking");
-        usleep(info->sleep_time * 1000);
     }
     return (NULL);
 }
